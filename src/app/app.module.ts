@@ -3,6 +3,8 @@ import { BrowserModule } from '@angular/platform-browser';
 import { RouterModule, Routes } from '@angular/router';
 import { AppComponent } from './app.component';
 import { HttpClientModule } from '@angular/common/http';
+import { GridComponent } from './pages/grid/grid.component';
+import { PagesModule } from './pages/pages.module';
 
 const appRoutes: Routes = [
   {
@@ -23,11 +25,12 @@ const appRoutes: Routes = [
 ];
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent    
   ],
   imports: [
     BrowserModule,
     HttpClientModule,
+    PagesModule,
     RouterModule.forRoot(appRoutes, {
       //useHash: true,
       scrollPositionRestoration: 'enabled',

@@ -1,30 +1,32 @@
 <ng-container>
     <div class="container-fluid custom-container-options">
         <div class="row">
-            <div class="col-md-7">
-                <p style="font-size: 60px;">
-                    <span>First I wanted to be <br> a veterinarian</span>
+            <div class="col-md-7" *ngIf="texto=='1'">
+                <p style="font-size: 60px;"><span>First I wanted to be <br> a veterinarian</span>
                     <p>
-                        <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec est metus, tristique sit amet turpis vitae. </h4>
-                        <br>
+                        <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec est metus, tristique sit amet turpis vitae. </h4><br>
                         <p>
                             <div class="row col-sm-12">
-                                <div class="col-sm-3">
-                                    <button type="button" class="btn custom-button">Contact Us</button>
-                                </div>
-                                <div class="col-sm-3">
-                                    <button type="button" class="btn btn-outline-light">Our Service</button>
-                                </div>
+                                <div class="col-sm-3"><button type="button" class="btn custom-button">Contact Us</button></div>
+                                <div class="col-sm-3"><button type="button" class="btn btn-outline-light">Our Service</button></div>
                             </div>
 
+            </div>
+            <div class="col-md-7" *ngIf="texto=='2'" style="color: black;">
+                <p style="font-size: 50px;"><span>As a veterinarian and<br> lover of animals</span>
+                    <p>
+                        <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec est metus, tristique sit amet turpis vitae. </h4><br>
+                        <p>
+                            <div class="row col-sm-12">
+                                <div class="col-sm-3"><button type="button" class="btn custom-button-white">Our Service</button></div>
+
+                            </div>
 
             </div>
             <div class="col-md-5">
-                <img src="assets/images/perro.png" class="img-fluid" alt="perro">
+                <img src="{{image}}" class="img-fluid" alt="perro">
             </div>
         </div>
-        <div class="row">
 
-        </div>
     </div>
 </ng-container>

@@ -46,15 +46,30 @@
 
 
 
-        <section>
-            <div class="custom-container">
+        <section class="custom-container">
+            <div>
                 <div class="container">
                     <div class="row col-sm-12" style="padding-top: 20px;">
-                        <router-outlet></router-outlet>
+                        <!-- <router-outlet></router-outlet> -->
+                        <app-home [texto]="'1'" [image]="'assets/images/perro.png'"></app-home>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div>
+                <div class="container">
+                    <div class="row col-sm-12" style="padding-top: 20px;">
+                        <!-- <app-grid></app-grid> -->
+                        <app-home [texto]="'2'" [image]="'assets/images/familia-con-perros.jpg'"></app-home>
                     </div>
                 </div>
             </div>
 
+        </section>
+
+        <section>
             <div class="wrap footer t3-footer">
                 <div class="container">
                     <div class="row P-40">
@@ -98,10 +113,7 @@
                 </div>
 
             </div>
-
         </section>
-
-
 
 
     </ng-container>

@@ -17,6 +17,12 @@
     border-color: #04c4cc;
 }
 
+.custom-button-white {
+    background-color: #fcc404!important;
+    color: #fff;
+    border-color: #fcc404;
+}
+
 .custom-container-options {
     padding-top: 20px;
     padding-bottom: 20px;
