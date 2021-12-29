@@ -1,0 +1,24 @@
+.footer {
+    position: relative;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    min-width: 100%;
+    min-height: 100px;
+    /* background: url(/factorypress/templates/jb_fatory_press/images/footer-bg.jpg) no-repeat scroll left bottom / cover; */
+    background-color: #343434;
+    color: #fff;
+    opacity: 1.2;
+}
+
+.custom-button {
+    background-color: #04c4cc!important;
+    color: #fff;
+    border-color: #04c4cc;
+}
+
+.custom-container-options {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: #fff;
+}

@@ -1,0 +1,111 @@
+<html>
+
+<head>
+    <title>Pets</title>
+</head>
+
+<body>
+    <ng-container>
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-light nav-padding">
+                <div class="container-fluid custom-container-fluid">
+                    <a class="navbar-brand" href="#"><img src="assets/images/huella.png" class="img-fluid" alt="Logo">COMPANY LOGO</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Service</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Contact</a>
+                            </li>
+                        </ul>
+                        <form class="d-flex">
+
+
+                            <div class="input-group custom-input-group">
+                                <input class="form-control custom-form-control custom-search-box shadow-none" type="search" placeholder="Search" aria-label="Search">
+                                <button class="btn custom-button shadow-none" type="submit"><i class="fas fa-search"></i></button>
+                            </div>
+
+
+
+                        </form>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+
+
+        <section>
+            <div class="custom-container">
+                <div class="container">
+                    <div class="row col-sm-12" style="padding-top: 20px;">
+                        <router-outlet></router-outlet>
+                    </div>
+                </div>
+            </div>
+
+            <div class="wrap footer t3-footer">
+                <div class="container">
+                    <div class="row P-40">
+
+                        <div class="col-md-3">
+                            <p style="font-size: 2.4em;">About</p>
+                            <div class="row col-sm-12">
+                                <p style="font-size: 1.2em;">History <br> Our Team <br> Brand Guidelines <br> Terms&Condition <br> Privacy Policy</p>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <p style="font-size: 2.4em;">Services</p>
+                            <div class="row col-sm-12">
+                                <p style="font-size: 1.2em;">How to Order <br> Our Product <br> Order Status <br> Promo <br> Payment Method</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6" style="text-align: right!important;">
+                            <p style="font-size: 2.4em;">Title Here</p>
+
+                            <div class="row col-sm-12">
+                                <div style="font-size: 1.2em;">Lorem Ipsum is simply dummy text <br><br>
+                                    <div class="col-sm-8 float-end">
+
+                                        <form class="d-flex">
+                                            <div class="input-group custom-input-group">
+                                                <input class="form-control custom-form-control custom-search-box shadow-none" type="search" aria-label="Search">
+                                                <button class="btn custom-button shadow-none" type="submit"><i class="fab fa-telegram-plane"></i></button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <br>
+                                    <br>
+                                    <div class="col-sm-12 float-end">
+                                        <button type="button" class="btn btn-light btn-circle"><i class="fab fa-instagram"></i></button> <button type="button" class="btn btn-light btn-circle"><i class="fab fa-facebook"></i></button> <button type="button"
+                                            class="btn btn-light btn-circle"><i class="fab fa-twitter-square"></i></button> <button type="button" class="btn btn-light btn-circle"><i class="fab fa-whatsapp"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+
+    </ng-container>
+
+</body>
+
+</html>
