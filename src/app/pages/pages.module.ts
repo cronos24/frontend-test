@@ -16,6 +16,11 @@ import {ToastModule} from 'primeng/toast';
 import {ContextMenuModule} from 'primeng/contextmenu';
 import { FormsModule } from '@angular/forms';
 
+import {TableModule} from 'primeng/table';
+import {CalendarModule} from 'primeng/calendar';
+import {SliderModule} from 'primeng/slider';
+import {DropdownModule} from 'primeng/dropdown';
+import {ProgressBarModule} from 'primeng/progressbar';
 
 
 @NgModule({
@@ -34,7 +39,12 @@ import { FormsModule } from '@angular/forms';
     MultiSelectModule,
     InputTextModule,
     ContextMenuModule,
-    FormsModule
+    FormsModule,
+    TableModule,
+    CalendarModule,
+    SliderModule,
+    DropdownModule,
+    ProgressBarModule
   ],
   exports:[
     GridComponent,

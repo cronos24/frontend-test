@@ -13,6 +13,7 @@ import {MultiSelectModule} from 'primeng/multiselect';
 import {InputTextModule} from 'primeng/inputtext';
 import {ToastModule} from 'primeng/toast';
 import {ContextMenuModule} from 'primeng/contextmenu';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 const appRoutes: Routes = [
   {
@@ -46,6 +47,7 @@ const appRoutes: Routes = [
     ContextMenuModule,
     HttpClientModule,
     PagesModule,
+    BrowserAnimationsModule,
     RouterModule.forRoot(appRoutes, {
       //useHash: true,
       scrollPositionRestoration: 'enabled',

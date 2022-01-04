@@ -14,9 +14,7 @@ export class NodeService {
       .then(res => <TreeNode[]>res.data);
     }
 
-    getLazyFilesystem() {
-    return this.http.get<any>('assets/filesystem-lazy.json')
-      .toPromise()
-      .then(res => <TreeNode[]>res.data);
+    getData() {
+    return this.http.get<any>('assets/data.json');
     }
 }

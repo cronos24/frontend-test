@@ -1,28 +1,30 @@
-<p-treeTable [value]="files" [columns]="selectedColumns">
-    <ng-template pTemplate="caption">
-        <div style="text-align:left">
-            <p-multiSelect [options]="cols" [(ngModel)]="selectedColumns" optionLabel="header" selectedItemsLabel="{0} columns selected" [style]="{'width': '20em'}" defaultLabel="Choose Columns"></p-multiSelect>
-            <!-- <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example">
-                <option selected>Open this select menu</option>
-                <option value="1">One</option>
-                <option value="2">Two</option>
-                <option value="3">Three</option>
-              </select> -->
-        </div>
-    </ng-template>
-    <ng-template pTemplate="header" let-columns>
-        <tr>
-            <th *ngFor="let col of columns">
-                {{col.header}}
-            </th>
-        </tr>
-    </ng-template>
-    <ng-template pTemplate="body" let-rowNode let-rowData="rowData" let-columns="columns">
-        <tr>
-            <td *ngFor="let col of columns; let i = index">
-                <p-treeTableToggler [rowNode]="rowNode" *ngIf="i == 0"></p-treeTableToggler>
-                {{rowData[col.field]}}
-            </td>
-        </tr>
-    </ng-template>
-</p-treeTable>
+<div class="container">
+    <div class="row col-md-12" style="padding-bottom: 10px;">
+        <p-treeTable [value]="files" [columns]="cols" [paginator]="true" [rows]="10">
+            <ng-template pTemplate="caption">
+                <div style="text-align:left">
+                    <p-multiSelect [options]="selectData" [(ngModel)]="selectedColumns" optionLabel="name" selectedItemsLabel="{0} columns selected" [style]="{'width': '20em'}" defaultLabel="Choose Columns" (onChange)="onChange($event)"></p-multiSelect>
+                
+                </div>
+            </ng-template>
+            <ng-template pTemplate="header" let-columns>
+                <tr>
+                    <th *ngFor="let col of columns">
+                        {{col.header}}
+                    </th>
+                </tr>
+            </ng-template>
+            <ng-template pTemplate="body" let-rowNode let-rowData="rowData" let-columns="columns">
+                <tr>
+                    <td *ngFor="let col of columns; let i = index">
+                        <p-treeTableToggler [rowNode]="rowNode" *ngIf="i == 0"></p-treeTableToggler>
+                        {{rowData[col.field]}}
+                    </td>
+                </tr>
+            </ng-template>
+        </p-treeTable>
+    </div>
+
+    
+    
+</div>
