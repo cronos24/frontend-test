@@ -7,6 +7,16 @@ import { ErrorComponent } from './error/error.component';
 import { HomeService } from './home.service';
 import { GridComponent } from './grid/grid.component';
 
+import {TreeTableModule} from 'primeng/treetable';
+import {ButtonModule} from 'primeng/button';
+import {DialogModule} from 'primeng/dialog';
+import {MultiSelectModule} from 'primeng/multiselect';
+import {InputTextModule} from 'primeng/inputtext';
+import {ToastModule} from 'primeng/toast';
+import {ContextMenuModule} from 'primeng/contextmenu';
+import { FormsModule } from '@angular/forms';
+
+
 
 @NgModule({
   declarations: [
@@ -16,7 +26,15 @@ import { GridComponent } from './grid/grid.component';
   ],
   imports: [
     CommonModule,
-    PagesRoutingModule
+    PagesRoutingModule,
+    TreeTableModule,
+    ToastModule,
+    DialogModule,
+    ButtonModule,
+    MultiSelectModule,
+    InputTextModule,
+    ContextMenuModule,
+    FormsModule
   ],
   exports:[
     GridComponent,
